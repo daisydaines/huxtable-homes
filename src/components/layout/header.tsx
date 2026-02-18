@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
@@ -37,19 +38,15 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <span className={cn(
-              "font-serif text-2xl font-bold tracking-tight transition-colors duration-300",
-              scrolled ? "text-foreground" : "text-white"
-            )}>
-              Huxtable
-            </span>
-            <span className={cn(
-              "font-serif text-2xl font-light tracking-tight transition-colors duration-300",
-              scrolled ? "text-bronze" : "text-bronze-light"
-            )}>
-              Homes
-            </span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/logo-blue.jpg"
+              alt="Huxtable Homes"
+              width={56}
+              height={56}
+              className="rounded-sm"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
@@ -59,9 +56,12 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium tracking-wide uppercase transition-colors hover:text-bronze",
+                  "text-sm font-medium tracking-wide uppercase transition-colors",
+                  scrolled
+                    ? "hover:text-slate"
+                    : "hover:text-bronze-light",
                   pathname === link.href
-                    ? "text-bronze"
+                    ? scrolled ? "text-slate" : "text-bronze-light"
                     : scrolled ? "text-foreground/70" : "text-white/80"
                 )}
               >
@@ -85,9 +85,7 @@ export function Header() {
               </Button>
             </SheetTrigger>
             <SheetContent side="right" className="w-80 px-8 pt-12">
-              <SheetTitle className="font-serif text-xl px-0 mb-2">
-                Huxtable <span className="text-bronze">Homes</span>
-              </SheetTitle>
+              <SheetTitle className="sr-only">Huxtable Homes Menu</SheetTitle>
               <nav className="flex flex-col gap-2 mt-8 px-0">
                 {NAV_LINKS.map((link) => (
                   <Link
@@ -95,9 +93,9 @@ export function Header() {
                     href={link.href}
                     onClick={() => setOpen(false)}
                     className={cn(
-                      "text-lg font-medium tracking-wide transition-colors hover:text-bronze py-3",
+                      "text-lg font-medium tracking-wide transition-colors hover:text-slate py-3",
                       pathname === link.href
-                        ? "text-bronze"
+                        ? "text-slate"
                         : "text-foreground/70"
                     )}
                   >

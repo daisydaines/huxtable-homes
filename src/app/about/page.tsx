@@ -3,6 +3,7 @@ import { PageHero } from "@/components/shared/page-hero";
 import { StorySection } from "@/components/about/story-section";
 import { ValuesSection } from "@/components/about/values-section";
 import { TeamSection } from "@/components/about/team-section";
+import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "About",
@@ -15,7 +16,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="About Huxtable Homes"
-        subtitle="Designing and building bespoke luxury residences since 1995. Our passion is crafting homes that stand the test of time."
+        subtitle={`Designing and building bespoke luxury residences since ${COMPANY.founded}. Our passion is crafting homes that stand the test of time.`}
       />
       <StorySection />
       <ValuesSection />

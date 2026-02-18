@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { AnimateOnScroll } from "@/components/shared/animate-on-scroll";
+import { COMPANY } from "@/lib/constants";
 
 export function StorySection() {
   return (
@@ -16,7 +17,7 @@ export function StorySection() {
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Founded in 1995 by Ken and Michelle Huxtable, our firm was
+                  Founded in {COMPANY.founded} by Ken and Michelle Huxtable, our firm was
                   born from a shared belief that a home should be more than a
                   structure — it should be a living expression of the people who
                   inhabit it.

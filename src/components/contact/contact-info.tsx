@@ -24,12 +24,17 @@ export function ContactInfo() {
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">
             Phone
           </p>
-          <a
-            href={`tel:${COMPANY.phone}`}
-            className="font-medium hover:text-bronze transition-colors"
-          >
-            {COMPANY.phone}
-          </a>
+          <div className="flex flex-col gap-1">
+            {COMPANY.phone.map((num) => (
+              <a
+                key={num}
+                href={`tel:${num}`}
+                className="font-medium hover:text-bronze transition-colors"
+              >
+                {num}
+              </a>
+            ))}
+          </div>
         </div>
 
         <div>

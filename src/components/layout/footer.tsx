@@ -15,8 +15,11 @@ export function Footer() {
                 <span className="font-light text-bronze-light">Homes</span>
               </span>
             </Link>
-            <p className="mt-4 text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
-              {COMPANY.tagline}. Designing and building bespoke luxury residences since {COMPANY.founded}.
+            <p className="mt-2 text-sm text-primary-foreground/70 tracking-wide">
+              {COMPANY.tagline}
+            </p>
+            <p className="mt-3 text-sm text-primary-foreground/50">
+              {COMPANY.brandLine}
             </p>
           </div>
 
@@ -41,12 +44,15 @@ export function Footer() {
             <h3 className="font-serif text-lg font-semibold mb-4">Contact</h3>
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/60">
               <p>{COMPANY.address}</p>
-              <a
-                href={`tel:${COMPANY.phone}`}
-                className="hover:text-bronze-light transition-colors"
-              >
-                {COMPANY.phone}
-              </a>
+              {COMPANY.phone.map((num) => (
+                <a
+                  key={num}
+                  href={`tel:${num}`}
+                  className="hover:text-bronze-light transition-colors"
+                >
+                  {num}
+                </a>
+              ))}
               <a
                 href={`mailto:${COMPANY.email}`}
                 className="hover:text-bronze-light transition-colors"
@@ -61,7 +67,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-primary-foreground/40">
           <p>&copy; {new Date().getFullYear()} Huxtable Homes. All rights reserved.</p>
-          <p>Designed with care in Holladay, Utah</p>
+          <p>Holladay, Utah</p>
         </div>
       </div>
     </footer>

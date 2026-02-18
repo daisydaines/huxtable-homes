@@ -26,7 +26,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-sm md:text-base tracking-[0.3em] uppercase text-white/80 mb-6"
         >
-          Luxury Home Design & Build
+          New Construction • Interior Design
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -34,9 +34,9 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.4 }}
           className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
         >
-          Crafting Timeless
+          Creating Timeless
           <br />
-          Luxury Living
+          Gathering Places
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
