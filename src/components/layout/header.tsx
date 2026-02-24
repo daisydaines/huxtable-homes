@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
@@ -39,14 +38,10 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <Image
-              src="/logo-blue.jpg"
-              alt="Huxtable Homes"
-              width={56}
-              height={56}
-              className="rounded-sm"
-              priority
-            />
+            <span className="font-serif text-2xl font-bold tracking-tight text-white">
+              Huxtable{" "}
+              <span className="font-light text-bronze-light">Homes</span>
+            </span>
           </Link>
 
           {/* Desktop Nav */}
@@ -57,12 +52,8 @@ export function Header() {
                 href={link.href}
                 className={cn(
                   "text-sm font-medium tracking-wide uppercase transition-colors",
-                  scrolled
-                    ? "hover:text-slate"
-                    : "hover:text-bronze-light",
-                  pathname === link.href
-                    ? scrolled ? "text-slate" : "text-bronze-light"
-                    : scrolled ? "text-foreground/70" : "text-white/80"
+                  scrolled ? "hover:text-slate text-foreground/70" : "hover:text-white text-white/80",
+                  pathname === link.href && "underline underline-offset-4 decoration-2"
                 )}
               >
                 {link.label}
