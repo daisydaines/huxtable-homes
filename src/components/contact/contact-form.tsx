@@ -146,22 +146,23 @@ export function ContactForm() {
         )}
       </div>
 
-      <Turnstile
-        ref={turnstileRef}
-        siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? ""}
-        onSuccess={(token) => setTurnstileToken(token)}
-        onExpire={() => setTurnstileToken(null)}
-        options={{ theme: "light" }}
-      />
-
-      <Button
-        type="submit"
-        size="lg"
-        disabled={submitting || !turnstileToken}
-        className="w-full sm:w-auto bg-bronze hover:bg-bronze-dark text-white px-10"
-      >
-        {submitting ? "Sending..." : "Send Message"}
-      </Button>
+      <div className="flex flex-wrap items-center gap-4">
+        <Button
+          type="submit"
+          size="lg"
+          disabled={submitting || !turnstileToken}
+          className="bg-bronze hover:bg-bronze-dark text-white px-10"
+        >
+          {submitting ? "Sending..." : "Send Message"}
+        </Button>
+        <Turnstile
+          ref={turnstileRef}
+          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY ?? ""}
+          onSuccess={(token) => setTurnstileToken(token)}
+          onExpire={() => setTurnstileToken(null)}
+          options={{ appearance: "interaction-only" }}
+        />
+      </div>
     </form>
   );
 }
