@@ -22,7 +22,7 @@ function buildHtml(data: ContactFormData): string {
               <tr>
                 <td style="background-color: #2C2C2C; padding: 32px 40px; border-radius: 8px 8px 0 0;">
                   <p style="margin: 0; color: #C4A882; font-size: 11px; letter-spacing: 3px; text-transform: uppercase;">Huxtable Homes</p>
-                  <h1 style="margin: 8px 0 0; color: #FFFFFF; font-size: 22px; font-weight: normal; letter-spacing: 0.5px;">New Enquiry</h1>
+                  <h1 style="margin: 8px 0 0; color: #FFFFFF; font-size: 22px; font-weight: normal; letter-spacing: 0.5px;">New Inquiry</h1>
                 </td>
               </tr>
 
@@ -113,7 +113,7 @@ export async function sendContactEmail(data: ContactFormData) {
     from,
     to,
     replyTo: data.email,
-    subject: `New enquiry from ${data.name}`,
+    subject: `New inquiry from ${data.name}`,
     html: buildHtml(data),
   });
 }
