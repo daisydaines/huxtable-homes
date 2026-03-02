@@ -16,25 +16,35 @@ export function StorySection() {
                 A Legacy of Craftsmanship
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
+
                 <p>
-                  Founded in {COMPANY.founded} by Ken and Michelle Huxtable, our firm was
-                  born from a shared belief that a home should be more than a
-                  structure — it should be a living expression of the people who
-                  inhabit it.
+                  Huxtable Homes started in St. George, UT in {COMPANY.founded}. Now
+                  based in Holladay we have designed and built custom homes
+                  in the most venerable areas across the state of Utah and
+                  beyond. From Ogden to the Provo Riverwoods, Alpine,
+                  Highland, Draper, Cottonwood Heights and Holladay
+                  we have built or remodeled 50+ homes over the years.
                 </p>
                 <p>
-                  What began as a boutique design-build practice in St George
-                  has grown into one of Utah&apos;s most respected luxury
-                  residential firms. Over thirty years, we&apos;ve completed
-                  more than 75 bespoke homes across the state, each one a unique
-                  collaboration between our team and our clients.
+                  Outside of the Wasatch Front, we have completed projects in
+                  Oakley, Huntsville, Park City, Glen Wild, Midway, Wolf Creek
+                  Ranches, plus projects across the country in New Canaan, CT.
+                  We have also built commercial properties in Salt Lake City,
+                  Ogden, Provo, Orem, Midvale and four locations in Chicago, IL.
                 </p>
                 <p>
-                  We believe that great architecture emerges from a deep
-                  understanding of place, purpose, and the craft of building.
-                  Our approach is unhurried and meticulous — we take on only a
-                  handful of projects each year, ensuring that every home
-                  receives our full creative attention.
+                  Our home design process begins with assessing the site
+                  topography, then creating a footprint that maximizes space,
+                  light, and views. We have longstanding partnerships with a high
+                  caliber team of engineers and architects that make our concepts a
+                  reality by developing the construction drawings and delivering
+                  our customers high resolution conceptual renderings that give
+                  a vision of the finished product before we even break ground.
+                </p>
+                <p>
+                  Our design team works intimately with homeowners on
+                  furnishings to create a turn key operation that incorporates
+                  their personal touch making their house a home.
                 </p>
               </div>
             </div>

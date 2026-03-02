@@ -4,19 +4,14 @@ import { SectionHeader } from "@/components/shared/section-header";
 
 const values = [
   {
-    title: "Uncompromising Quality",
+    title: "Our Craft",
     description:
-      "We select the finest materials and partner with master craftsmen who share our exacting standards. Every joint, every finish, every detail is held to the highest measure.",
+      "Our creative passion is rooted in purposeful details with solid intent for use of light & space. We combine the finest building materials and intentional craftsmanship with a rare attention to detail, making each project a unique experience for all who enter.",
   },
   {
-    title: "Thoughtful Design",
+    title: "Our Vision",
     description:
-      "Great homes begin with great listening. We take the time to understand how you live, what inspires you, and what home means to you — then translate that into architecture.",
-  },
-  {
-    title: "Enduring Value",
-    description:
-      "We build homes that stand the test of time — architecturally, structurally, and aesthetically. Our designs transcend trends, creating spaces that grow more beautiful with age.",
+      "Our vision originates from the belief that a home is a place of inspiration where our clients forge bonds of connection and love while gathering with family and friends to celebrate life. We create spaces for peaceful living.",
   },
 ];
 
@@ -31,7 +26,7 @@ export function ValuesSection() {
           />
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {values.map((value, i) => (
             <AnimateOnScroll key={value.title} delay={i * 0.15}>
               <Card className="bg-white/80 border-0 shadow-none h-full">

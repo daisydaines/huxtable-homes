@@ -16,14 +16,14 @@ export const projects: Project[] = [
   {
     slug: "summit-ridge-estate",
     name: "Summit Ridge Estate",
-    location: "Park City, Utah",
-    year: 2023,
+    location: "Midway, Utah",
+    year: 2024,
     category: "Modern Estate",
-    sqft: 12500,
+    sqft: 17000,
     description:
       "A sweeping mountainside estate that merges modernist architecture with the dramatic beauty of the Wasatch Range.",
     longDescription:
-      "Perched on a ridge overlooking the Wasatch Mountains, this 12,500 square foot estate represents the pinnacle of modern mountain living. Floor-to-ceiling glass walls dissolve the boundary between interior and exterior, while natural stone and warm timber elements ground the home in its landscape. The open-plan living spaces flow seamlessly onto cantilevered terraces, offering unobstructed views from Deer Valley to the Jordanelle Reservoir. Every detail — from the custom bronze hardware to the heated infinity-edge pool that steams against the winter sky — was designed to celebrate the extraordinary setting.",
+      "Perched on a ridge overlooking the Wasatch Mountains, this 17000 square foot estate represents the pinnacle of modern mountain living. Floor-to-ceiling glass walls dissolve the boundary between interior and exterior, while natural stone and warm timber elements ground the home in its landscape. The open-plan living spaces flow seamlessly onto cantilevered terraces, offering unobstructed views from Deer Valley to the Jordanelle Reservoir. Every detail — from the custom bronze hardware to the heated infinity-edge pool that steams against the winter sky — was designed to celebrate the extraordinary setting.",
     features: [
       "Heated infinity pool with mountain views",
       "Custom bronze hardware throughout",
@@ -72,8 +72,8 @@ export const projects: Project[] = [
   {
     slug: "red-ledge-retreat",
     name: "Red Ledge Retreat",
-    location: "Heber, Utah",
-    year: 2023,
+    location: "Tuehaye, Utah",
+    year: 2025,
     category: "Contemporary",
     sqft: 6200,
     description:
