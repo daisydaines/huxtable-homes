@@ -74,25 +74,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
             <AnimateOnScroll className="lg:col-span-2">
-              <h2 className="font-serif text-2xl md:text-3xl font-bold mb-6">
-                About This Project
-              </h2>
-              <p className="text-muted-foreground leading-relaxed text-lg">
-                {project.longDescription}
-              </p>
-
-              {/* Features */}
-              <h3 className="font-serif text-xl font-semibold mt-10 mb-4">
-                Key Features
-              </h3>
-              <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                {project.features.map((feature) => (
+              <ul className="space-y-4">
+                {project.details.map((detail) => (
                   <li
-                    key={feature}
-                    className="flex items-start gap-2 text-muted-foreground"
+                    key={detail}
+                    className="flex items-start gap-3 text-lg text-muted-foreground"
                   >
-                    <span className="text-bronze mt-1 shrink-0">&#9670;</span>
-                    {feature}
+                    <span className="text-bronze mt-1.5 shrink-0">&#9670;</span>
+                    {detail}
                   </li>
                 ))}
               </ul>
@@ -107,19 +96,15 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 <div className="space-y-4">
                   {[
                     { label: "Location", value: project.location },
-                    { label: "Year", value: project.year.toString() },
+                    { label: "Completion", value: project.completion },
                     { label: "Category", value: project.category },
-                    {
-                      label: "Size",
-                      value: `${project.sqft.toLocaleString()} sq ft`,
-                    },
                   ].map((fact, i) => (
                     <div key={fact.label}>
                       <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">
                         {fact.label}
                       </p>
                       <p className="mt-1 font-medium">{fact.value}</p>
-                      {i < 3 && <Separator className="mt-4" />}
+                      {i < 2 && <Separator className="mt-4" />}
                     </div>
                   ))}
                 </div>
