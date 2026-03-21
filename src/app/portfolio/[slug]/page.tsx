@@ -73,7 +73,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       {/* Project Info */}
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
             <AnimateOnScroll className="lg:col-span-2">
               <ul className="space-y-4">
                 {project.details.map((detail) => (
@@ -131,7 +131,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <section className="border-t border-border">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-2 divide-x divide-border">
-            <div className="py-8 pr-8">
+            <div className="py-8 pr-4 md:pr-8">
               {prev ? (
                 <Link
                   href={`/portfolio/${prev.slug}`}
@@ -148,7 +148,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 <div />
               )}
             </div>
-            <div className="py-8 pl-8 text-right">
+            <div className="py-8 pl-4 md:pl-8 text-right">
               {next ? (
                 <Link
                   href={`/portfolio/${next.slug}`}

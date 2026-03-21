@@ -18,7 +18,7 @@ export function CTASection() {
               <div className="absolute inset-0 bg-black/60" />
             </div>
 
-            <div className="relative z-10 py-20 md:py-28 px-8 md:px-16 text-center">
+            <div className="relative z-10 py-14 md:py-20 lg:py-28 px-6 md:px-12 lg:px-16 text-center">
               <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
                 Ready to Build Your Dream Home?
               </h2>

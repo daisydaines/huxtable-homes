@@ -75,7 +75,7 @@ export function Header() {
                 <Menu className="h-6 w-6" />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-80 px-8 pt-12">
+            <SheetContent side="right" className="w-[min(320px,85vw)] px-6 pt-12">
               <SheetTitle className="sr-only">Huxtable Homes Menu</SheetTitle>
               <nav className="flex flex-col gap-2 mt-8 px-0">
                 {NAV_LINKS.map((link) => (
