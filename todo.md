@@ -40,6 +40,11 @@
 - [ ] Vercel Postgres credentials
 - [ ] Confirm Vercel account situation (theirs or yours?)
 
+---
+
+# Performance
+- [ ] Deploy to Vercel — enables global CDN, automatic WebP conversion, and on-the-fly image resizing. Single biggest speed improvement remaining for the portfolio page.
+
 
  **Brand Colors**
 - HEX: 5e6475

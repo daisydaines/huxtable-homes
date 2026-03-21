@@ -16,7 +16,7 @@ export function IntroSection() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
             {[
               {
-                number: "75+",
+                number: "50+",
                 label: "Luxury Homes Built",
               },
               {

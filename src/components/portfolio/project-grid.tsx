@@ -9,7 +9,7 @@ export function ProjectGrid() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, i) => (
             <AnimateOnScroll key={project.slug} delay={i * 0.1}>
-              <ProjectCard project={project} />
+              <ProjectCard project={project} priority={i < 3} />
             </AnimateOnScroll>
           ))}
         </div>

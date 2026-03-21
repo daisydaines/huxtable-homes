@@ -53,7 +53,7 @@ export function StorySection() {
           <AnimateOnScroll delay={0.2}>
             <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
               <Image
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+                src="/images/marcella-lot-68/compressed/Cam_01.jpg"
                 alt="Huxtable Homes craftsmanship"
                 fill
                 className="object-cover"

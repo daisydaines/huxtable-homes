@@ -12,7 +12,7 @@ export function CTASection() {
               className="absolute inset-0 bg-cover bg-center"
               style={{
                 backgroundImage:
-                  "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80')",
+                  "url('/images/holladay-remodel/compressed/Holladay_Remodel_1.jpg')",
               }}
             >
               <div className="absolute inset-0 bg-black/60" />

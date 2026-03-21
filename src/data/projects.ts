@@ -8,6 +8,7 @@ export interface Project {
   description: string;
   images: string[];
   coverImage: string;
+  coverImagePosition?: string;
 }
 
 export const projects: Project[] = [
@@ -25,13 +26,14 @@ export const projects: Project[] = [
       "6,800 sq. ft. guest house / 5-car garage and ski room with 2,800 sq. ft. living quarters above",
     ],
     images: [
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=1200&q=80",
+      "/images/tuhaye-lot-34/compressed/Cam02.jpg",
+      "/images/tuhaye-lot-34/compressed/Cam03.jpg",
+      "/images/tuhaye-lot-34/compressed/Cam04.jpg",
+      "/images/tuhaye-lot-34/compressed/Cam05.jpg",
+      "/images/tuhaye-lot-34/compressed/Cam07.jpg",
+      "/images/tuhaye-lot-34/compressed/Cam10.jpg",
     ],
-    coverImage:
-      "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80",
+    coverImage: "/images/tuhaye-lot-34/compressed/Cam01.jpg",
   },
   {
     slug: "cottonwood-villa",
@@ -48,13 +50,15 @@ export const projects: Project[] = [
       "Central courtyard with mature aspens",
     ],
     images: [
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=1200&q=80",
+      "/images/holladay-remodel/compressed/Holladay_Remodel_2.jpg",
+      "/images/holladay-remodel/compressed/Holladay_Remodel_3.jpg",
+      "/images/holladay-remodel/compressed/Holladay_Remodel_4.jpg",
+      "/images/holladay-remodel/compressed/Holladay_Remodel_5.jpg",
+      "/images/holladay-remodel/compressed/Holladay_Remodel_6.jpg",
+      "/images/holladay-remodel/compressed/Holladay_Remodel_7.jpg",
     ],
-    coverImage:
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
+    coverImage: "/images/holladay-remodel/compressed/Holladay_Remodel_1.jpg",
+    coverImagePosition: "top",
   },
   {
     slug: "red-ledge-retreat",
@@ -70,13 +74,16 @@ export const projects: Project[] = [
       "Natural swimming pool",
     ],
     images: [
-      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=1200&q=80",
+      "/images/marcella-lot-68/compressed/Cam_02.jpg",
+      "/images/marcella-lot-68/compressed/Cam_03.jpg",
+      "/images/marcella-lot-68/compressed/Cam_04_Take_12.jpg",
+      "/images/marcella-lot-68/compressed/Cam_05_Take12.jpg",
+      "/images/marcella-lot-68/compressed/Cam_06.jpg",
+      "/images/marcella-lot-68/compressed/Cam_07.jpg",
+      "/images/marcella-lot-68/compressed/Cam_10.jpg",
     ],
-    coverImage:
-      "https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=1200&q=80",
+    coverImage: "/images/marcella-lot-68/compressed/Cam_01.jpg",
+    coverImagePosition: "top",
   },
   {
     slug: "emigration-manor",

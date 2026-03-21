@@ -12,10 +12,10 @@ export function HeroSection() {
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80')",
+            "url('/images/marcella-lot-68/compressed/Cam_05_Take12.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/55" />
       </div>
 
       {/* Content */}

@@ -49,6 +49,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           alt={project.name}
           fill
           className="object-cover"
+          style={{ objectPosition: project.coverImagePosition ?? "center" }}
           priority
           sizes="100vw"
         />
@@ -80,7 +81,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                     key={detail}
                     className="flex items-start gap-3 text-lg text-muted-foreground"
                   >
-                    <span className="text-bronze mt-1.5 shrink-0">&#9670;</span>
+                    <span className="text-bronze shrink-0">&#9670;</span>
                     {detail}
                   </li>
                 ))}
