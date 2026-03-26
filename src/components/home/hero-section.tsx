@@ -1,20 +1,54 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { useState, useEffect } from "react";
+
+const HERO_IMAGES = [
+  "/images/marcella-lot-68/compressed/Cam_05_Take12.jpg",
+  "/images/tuhaye-lot-34/compressed/Cam01.jpg",
+  "/images/read-home/compressed/Cam_01_Take03-2.jpg",
+  "/images/holladay-remodel/compressed/Holladay_Remodel_1.jpg",
+  "/images/read-barn/compressed/1_16.jpg",
+];
+
+const INTERVAL = 6000;
 
 export function HeroSection() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIndex((i) => (i + 1) % HERO_IMAGES.length);
+    }, INTERVAL);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            "url('/images/marcella-lot-68/compressed/Cam_05_Take12.jpg')",
-        }}
-      >
+      {/* Background Slideshow */}
+      <div className="absolute inset-0">
+        <AnimatePresence initial={false}>
+          <motion.div
+            key={index}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1.5, ease: "easeInOut" }}
+            className="absolute inset-0"
+          >
+            <Image
+              src={HERO_IMAGES[index]}
+              alt=""
+              fill
+              className="object-cover object-center"
+              priority={index === 0}
+              sizes="100vw"
+            />
+          </motion.div>
+        </AnimatePresence>
         <div className="absolute inset-0 bg-black/55" />
       </div>
 
@@ -26,7 +60,12 @@ export function HeroSection() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-sm md:text-base tracking-[0.3em] uppercase text-white/80 mb-6"
         >
-          New Construction • Interior Design
+          <span className="flex flex-col items-center justify-center gap-2 md:flex-row md:gap-0">
+            <span className="whitespace-nowrap">New Construction</span>
+            <span className="hidden md:inline mx-3">•</span>
+            <span className="block w-8 h-px bg-white/40 md:hidden" />
+            <span className="whitespace-nowrap">Interior Design</span>
+          </span>
         </motion.p>
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
