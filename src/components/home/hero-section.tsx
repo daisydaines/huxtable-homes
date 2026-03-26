@@ -29,7 +29,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
       {/* Background Slideshow */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 bg-black">
         <AnimatePresence initial={false}>
           <motion.div
             key={index}
