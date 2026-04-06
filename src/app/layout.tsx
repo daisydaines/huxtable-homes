@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { playfair, inter } from "@/lib/fonts";
+import { cormorant, inter } from "@/lib/fonts";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { Analytics } from "@vercel/analytics/next";
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${inter.variable} antialiased`}
+        className={`${cormorant.variable} ${inter.variable} antialiased`}
       >
         <Header />
         <main className="min-h-screen">{children}</main>

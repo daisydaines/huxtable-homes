@@ -132,29 +132,6 @@ export const projects: Project[] = [
     ],
     coverImage: "/images/read-barn/compressed/1_16.jpg",
   },
-  {
-    slug: "zion-ridge-ranch",
-    name: "Zion Ridge Ranch",
-    location: "St. George, UT",
-    completion: "Spring 2022",
-    category: "Ranch Estate",
-    description:
-      "A refined ranch estate on the outskirts of St. George that celebrates indoor-outdoor living amid Utah's red rock landscape.",
-    details: [
-      "20 acre desert estate",
-      "11,000 sq. ft. main residence",
-      "Guest house and entertaining barn",
-      "Equestrian facilities",
-    ],
-    images: [
-      "https://images.unsplash.com/photo-1600047509782-20d39509f26d?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600566752355-35792bedcfea?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?w=1200&q=80",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80",
-    ],
-    coverImage:
-      "https://images.unsplash.com/photo-1600047509782-20d39509f26d?w=1200&q=80",
-  },
 ];
 
 export function getProject(slug: string): Project | undefined {
