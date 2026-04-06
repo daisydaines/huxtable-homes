@@ -22,12 +22,14 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity duration-300" />
         <div className="absolute bottom-0 left-0 right-0 p-6">
-          <Badge
-            variant="secondary"
-            className="mb-3 bg-white/20 text-white backdrop-blur-sm border-0"
-          >
-            {project.category}
-          </Badge>
+          {project.category !== "TBD" && (
+            <Badge
+              variant="secondary"
+              className="mb-3 bg-white/20 text-white backdrop-blur-sm border-0"
+            >
+              {project.category}
+            </Badge>
+          )}
           <h3 className="font-serif text-xl font-semibold text-white">
             {project.name}
           </h3>

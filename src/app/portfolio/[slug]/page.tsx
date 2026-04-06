@@ -56,12 +56,14 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 pb-12 md:pb-16">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <Badge
-              variant="secondary"
-              className="mb-4 bg-white/20 text-white backdrop-blur-sm border-0"
-            >
-              {project.category}
-            </Badge>
+            {project.category !== "TBD" && (
+              <Badge
+                variant="secondary"
+                className="mb-4 bg-white/20 text-white backdrop-blur-sm border-0"
+              >
+                {project.category}
+              </Badge>
+            )}
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
               {project.name}
             </h1>
@@ -74,19 +76,21 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <section className="py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
-            <AnimateOnScroll className="lg:col-span-2">
-              <ul className="space-y-4">
-                {project.details.map((detail) => (
-                  <li
-                    key={detail}
-                    className="flex items-start gap-3 text-lg text-muted-foreground"
-                  >
-                    <span className="text-bronze shrink-0">&#9670;</span>
-                    {detail}
-                  </li>
-                ))}
-              </ul>
-            </AnimateOnScroll>
+            {project.details.length > 0 && (
+              <AnimateOnScroll className="lg:col-span-2">
+                <ul className="space-y-4">
+                  {project.details.map((detail) => (
+                    <li
+                      key={detail}
+                      className="flex items-start gap-3 text-lg text-muted-foreground"
+                    >
+                      <span className="text-bronze shrink-0">&#9670;</span>
+                      {detail}
+                    </li>
+                  ))}
+                </ul>
+              </AnimateOnScroll>
+            )}
 
             {/* Quick Facts Sidebar */}
             <AnimateOnScroll delay={0.2}>
@@ -98,7 +102,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   {[
                     { label: "Location", value: project.location },
                     { label: "Completion", value: project.completion },
-                    { label: "Category", value: project.category },
+                    ...(project.category !== "TBD"
+                      ? [{ label: "Category", value: project.category }]
+                      : []),
                   ].map((fact, i) => (
                     <div key={fact.label}>
                       <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground">

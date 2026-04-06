@@ -20,7 +20,7 @@ export default function ContactPage() {
 
       <section className="py-24 md:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-16">
             <AnimateOnScroll className="lg:col-span-2">
               <ContactForm />
             </AnimateOnScroll>

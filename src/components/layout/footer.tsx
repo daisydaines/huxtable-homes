@@ -44,21 +44,12 @@ export function Footer() {
             <h3 className="font-serif text-lg font-semibold mb-4">Contact</h3>
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/60">
               <p>{COMPANY.address}</p>
-              {COMPANY.phone.map((num) => (
-                <a
-                  key={num}
-                  href={`tel:${num}`}
-                  className="hover:text-bronze-light transition-colors"
-                >
-                  {num}
-                </a>
-              ))}
-              <a
-                href={`mailto:${COMPANY.email}`}
+              <Link
+                href="/contact"
                 className="hover:text-bronze-light transition-colors"
               >
-                {COMPANY.email}
-              </a>
+                Contact Form
+              </Link>
             </div>
           </div>
         </div>

@@ -35,12 +35,14 @@ export function FeaturedProjects() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <Badge
-                      variant="secondary"
-                      className="mb-3 bg-white/20 text-white backdrop-blur-sm border-0"
-                    >
-                      {project.category}
-                    </Badge>
+                    {project.category !== "TBD" && (
+                      <Badge
+                        variant="secondary"
+                        className="mb-3 bg-white/20 text-white backdrop-blur-sm border-0"
+                      >
+                        {project.category}
+                      </Badge>
+                    )}
                     <h3 className="font-serif text-xl font-semibold text-white">
                       {project.name}
                     </h3>

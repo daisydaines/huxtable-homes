@@ -20,40 +20,12 @@ export function ContactInfo() {
           <p className="font-medium">{COMPANY.address}</p>
         </div>
 
-        <div>
-          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">
-            Phone
-          </p>
-          <div className="flex flex-col gap-1">
-            {COMPANY.phone.map((num) => (
-              <a
-                key={num}
-                href={`tel:${num}`}
-                className="font-medium hover:text-bronze transition-colors"
-              >
-                {num}
-              </a>
-            ))}
-          </div>
-        </div>
-
-        <div>
-          <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">
-            Email
-          </p>
-          <a
-            href={`mailto:${COMPANY.email}`}
-            className="font-medium hover:text-bronze transition-colors"
-          >
-            {COMPANY.email}
-          </a>
-        </div>
 
         <div>
           <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">
             Hours
           </p>
-          <p className="font-medium">Monday — Friday, 9am — 6pm PST</p>
+          <p className="font-medium">Monday — Friday, 9am — 6pm MST</p>
         </div>
       </div>
     </div>

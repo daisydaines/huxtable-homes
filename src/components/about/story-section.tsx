@@ -6,7 +6,7 @@ export function StorySection() {
   return (
     <section className="py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
           <AnimateOnScroll>
             <div>
               <p className="text-sm tracking-[0.3em] uppercase text-bronze mb-4">
