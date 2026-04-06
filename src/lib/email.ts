@@ -99,10 +99,11 @@ function buildHtml(data: ContactFormData): string {
 }
 
 export async function sendContactEmail(data: ContactFormData) {
-  const to = process.env.CONTACT_EMAIL;
-  if (!to) {
+  const contactEmail = process.env.CONTACT_EMAIL;
+  if (!contactEmail) {
     throw new Error("CONTACT_EMAIL environment variable is not set");
   }
+  const to = contactEmail.split(",").map((e) => e.trim());
 
   const from =
     process.env.NODE_ENV === "production"
