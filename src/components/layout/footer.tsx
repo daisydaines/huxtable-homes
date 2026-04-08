@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { NAV_LINKS, COMPANY } from "@/lib/constants";
 import { Separator } from "@/components/ui/separator";
 
@@ -10,10 +11,13 @@ export function Footer() {
           {/* Logo & Tagline */}
           <div>
             <Link href="/" className="inline-block">
-              <span className="font-serif text-2xl font-bold tracking-tight">
-                Huxtable{" "}
-                <span className="font-light text-bronze-light">Homes</span>
-              </span>
+              <Image
+                src="/logo.svg"
+                alt="Huxtable Homes"
+                width={140}
+                height={110}
+                className="h-14 w-auto"
+              />
             </Link>
             <p className="mt-2 text-sm text-primary-foreground/70 tracking-wide">
               {COMPANY.tagline}
@@ -26,7 +30,7 @@ export function Footer() {
           {/* Navigation */}
           <div>
             <h3 className="font-serif text-lg font-semibold mb-4">Navigation</h3>
-            <nav className="flex flex-col gap-3">
+            <nav className="grid grid-cols-2 gap-3">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}

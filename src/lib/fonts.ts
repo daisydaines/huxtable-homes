@@ -1,14 +1,7 @@
-import { Cormorant_Garamond, Inter } from "next/font/google";
+import { Work_Sans } from "next/font/google";
 
-export const cormorant = Cormorant_Garamond({
+export const workSans = Work_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-cormorant",
-  display: "swap",
-});
-
-export const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-work-sans",
   display: "swap",
 });

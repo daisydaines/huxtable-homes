@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Menu } from "lucide-react";
@@ -38,10 +39,17 @@ export function Header() {
         <div className="flex h-20 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <span className={cn("font-serif text-2xl font-bold tracking-tight", scrolled ? "text-foreground" : "text-white")}>
-              Huxtable{" "}
-              <span className="font-light text-bronze-light">Homes</span>
-            </span>
+            <Image
+              src="/logo.svg"
+              alt="Huxtable Homes"
+              width={140}
+              height={110}
+              className={cn(
+                "h-14 w-auto transition-all duration-300",
+                scrolled ? "logo-slate" : ""
+              )}
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
