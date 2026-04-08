@@ -4,7 +4,7 @@ export function ContactInfo() {
   return (
     <div className="space-y-8">
       <div>
-        <h3 className="font-serif text-xl font-semibold mb-4">Get in Touch</h3>
+        <h3 className="font-serif text-xl font-normal mb-4">Get in Touch</h3>
         <p className="text-muted-foreground leading-relaxed">
           We&apos;d love to hear about your project. Whether you&apos;re
           dreaming of a new build or considering a major renovation, our team is

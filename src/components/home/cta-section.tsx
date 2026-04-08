@@ -19,7 +19,7 @@ export function CTASection() {
             </div>
 
             <div className="relative z-10 py-14 md:py-20 lg:py-28 px-6 md:px-12 lg:px-16 text-center">
-              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-white tracking-tight">
+              <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-normal text-white tracking-tight">
                 Ready to Build Your Dream Home?
               </h2>
               <p className="mt-6 text-lg text-white/80 max-w-2xl mx-auto leading-relaxed">

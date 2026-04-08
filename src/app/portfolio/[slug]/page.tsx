@@ -64,7 +64,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 {project.category}
               </Badge>
             )}
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal text-white tracking-tight">
               {project.name}
             </h1>
             <p className="mt-3 text-lg text-white/80">{project.location}</p>
@@ -95,7 +95,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             {/* Quick Facts Sidebar */}
             <AnimateOnScroll delay={0.2}>
               <div className="bg-warm-beige rounded-lg p-8">
-                <h3 className="font-serif text-lg font-semibold mb-6">
+                <h3 className="font-serif text-lg font-normal mb-6">
                   Project Details
                 </h3>
                 <div className="space-y-4">
@@ -125,7 +125,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <section className="pb-16 md:pb-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <AnimateOnScroll>
-            <h2 className="font-serif text-2xl md:text-3xl font-bold mb-8">
+            <h2 className="font-serif text-2xl md:text-3xl font-normal mb-8">
               Gallery
             </h2>
           </AnimateOnScroll>
@@ -146,7 +146,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">
                     Previous Project
                   </p>
-                  <p className="font-serif text-lg font-semibold group-hover:text-bronze transition-colors">
+                  <p className="font-serif text-lg font-normal group-hover:text-bronze transition-colors">
                     {prev.name}
                   </p>
                 </Link>
@@ -163,7 +163,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                   <p className="text-xs tracking-[0.2em] uppercase text-muted-foreground mb-1">
                     Next Project
                   </p>
-                  <p className="font-serif text-lg font-semibold group-hover:text-bronze transition-colors">
+                  <p className="font-serif text-lg font-normal group-hover:text-bronze transition-colors">
                     {next.name}
                   </p>
                 </Link>
@@ -179,7 +179,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <section className="py-16 md:py-24 bg-warm-beige">
         <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <AnimateOnScroll>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold tracking-tight">
+            <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-tight">
               Inspired by This Project?
             </h2>
             <p className="mt-4 text-muted-foreground text-lg max-w-xl mx-auto">

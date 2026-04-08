@@ -64,7 +64,7 @@ export function ContactForm() {
   if (submitted) {
     return (
       <div className="text-center py-12">
-        <h3 className="font-serif text-2xl font-bold mb-4">Thank You</h3>
+        <h3 className="font-serif text-2xl font-normal mb-4">Thank You</h3>
         <p className="text-muted-foreground">
           We&apos;ve received your message and will be in touch within 24 hours.
         </p>

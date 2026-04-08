@@ -30,7 +30,7 @@ export function ProjectCard({ project, priority = false }: ProjectCardProps) {
               {project.category}
             </Badge>
           )}
-          <h3 className="font-serif text-xl font-semibold text-white">
+          <h3 className="font-serif text-xl font-normal text-white">
             {project.name}
           </h3>
           <p className="text-sm text-white/70 mt-1">{project.location}</p>

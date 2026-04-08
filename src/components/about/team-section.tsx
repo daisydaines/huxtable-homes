@@ -38,7 +38,7 @@ export function TeamSection() {
                 <p className="text-bronze text-xs uppercase tracking-widest mb-2">
                   {member.role}
                 </p>
-                <h3 className="font-serif text-2xl font-semibold mb-6">
+                <h3 className="font-serif text-2xl font-normal mb-6">
                   {member.name}
                 </h3>
                 <div className="space-y-4">

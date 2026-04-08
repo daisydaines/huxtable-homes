@@ -29,7 +29,7 @@ export function Footer() {
 
           {/* Navigation */}
           <div>
-            <h3 className="font-serif text-lg font-semibold mb-4">Navigation</h3>
+            <h3 className="font-serif text-lg font-normal mb-4">Navigation</h3>
             <nav className="grid grid-cols-2 gap-3">
               {NAV_LINKS.map((link) => (
                 <Link
@@ -45,7 +45,7 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="font-serif text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="font-serif text-lg font-normal mb-4">Contact</h3>
             <div className="flex flex-col gap-3 text-sm text-primary-foreground/60">
               <p>{COMPANY.address}</p>
               <Link

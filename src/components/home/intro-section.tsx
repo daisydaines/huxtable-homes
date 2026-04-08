@@ -29,7 +29,7 @@ export function IntroSection() {
               },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="font-serif text-5xl md:text-6xl font-bold text-bronze">
+                <p className="font-serif text-5xl md:text-6xl font-normal text-bronze">
                   {stat.number}
                 </p>
                 <p className="mt-2 text-muted-foreground text-sm tracking-wide uppercase">

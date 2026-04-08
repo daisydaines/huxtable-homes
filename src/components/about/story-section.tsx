@@ -12,7 +12,7 @@ export function StorySection() {
               <p className="text-sm tracking-[0.3em] uppercase text-bronze mb-4">
                 Our Story
               </p>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold tracking-tight">
+              <h2 className="font-serif text-3xl md:text-4xl font-normal tracking-tight">
                 A Legacy of Craftsmanship
               </h2>
               <div className="mt-6 space-y-4 text-muted-foreground leading-relaxed">
